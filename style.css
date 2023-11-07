@@ -33,6 +33,11 @@ header{
     width: calc(100% / 10);
     height: calc(100% / 10);
 }
+.mediosquare{
+    border: 2px solid darkslategrey;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
 .black{
     background-color: rgba(0, 0, 0, 0.699);
 }
