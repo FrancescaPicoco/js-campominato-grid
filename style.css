@@ -36,3 +36,10 @@ header{
 .black{
     background-color: rgba(0, 0, 0, 0.699);
 }
+.stylenumber{
+    font-size: 40px;
+    color: cadetblue;
+    font-weight: 800;
+}
+
+

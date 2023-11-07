@@ -10,7 +10,11 @@ document.getElementById("btnPlayer").addEventListener("click" , function(){
         grid.appendChild(quadratino);  
         quadratino.addEventListener("click" , function () {
             this.classList.add("black");
-            
-        }) 
-     }
+            console.log(indexCell)
+            let numeroquadtratino = document.createElement("p");
+            numeroquadtratino.classList.add("stylenumber");
+            numb.appendChild(numeroquadtratino);
+            document.getElementById("numb").innerHTML += `${indexCell}`
+        })
+    }
 })
