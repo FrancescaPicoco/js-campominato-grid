@@ -33,3 +33,6 @@ header{
     width: calc(100% / 10);
     height: calc(100% / 10);
 }
+.black{
+    background-color: rgba(0, 0, 0, 0.699);
+}
