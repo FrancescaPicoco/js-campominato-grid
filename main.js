@@ -10,6 +10,7 @@ function creaGriglia() {
     //gridBuild.innerHTML = "";
     for (let i = 1; i <= numeroCelle ; i++) {
         let indexCell = creaQuadratino(i);
+        creaQuadratino(indexCell)
         console.log(indexCell);
         gridBuild.appendChild(quadratino);
     }    
