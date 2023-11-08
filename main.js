@@ -9,13 +9,14 @@ document.getElementById("btnPlayer").addEventListener("click" , function(){
         quadratino.classList.add("square");
         grid.appendChild(quadratino);  
         quadratino.addEventListener("click" , function () {
-            this.classList.add("black");
+            this.classList.toggle("black");
             console.log(indexCell)
-            let numeroquadtratino = document.createElement("p");
-            numeroquadtratino.classList.add("stylenumber");
-            numb.appendChild(numeroquadtratino);
-            document.getElementById(numb).innerHTML += `${indexCell}`
-            console.log(numb)
+            //let numeroquadtratino = document.createElement("p");
+            //numeroquadtratino.classList.add("stylenumber");
+            //numb.appendChild(numeroquadtratino);
+            quadratino.innerHTML += `${indexCell}`
+            quadratino.classList.add("stylenumber");
+
         })
     }
 })
