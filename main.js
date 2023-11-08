@@ -12,12 +12,12 @@ function creaGriglia() {
         let indexCell = creaQuadratino(i);
         creaQuadratino(indexCell)
         console.log(indexCell);
-        gridBuild.appendChild(quadratino);
+        gridBuild.appendChild(indexCell);
     }    
 }
 
 function creaQuadratino(indexCell) {
-    const quadratino = document.createElement("div");
+    let quadratino = document.createElement("div");
         quadratino.classList.add("square");
         //quadratino.innerHTML += `${indexCell}`
         quadratino.innerText = (indexCell);
@@ -26,4 +26,5 @@ function creaQuadratino(indexCell) {
             console.log(indexCell)  
             quadratino.classList.toggle("stylenumber");
         })
+    return quadratino;    
 }
